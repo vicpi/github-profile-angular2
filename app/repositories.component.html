@@ -1,0 +1,34 @@
+<div class="container">
+  <header>
+      <h1>{{ username }}</h1>
+  </header>
+  <div class="main">
+    <section class="languages">
+      <div class="languages-caption">
+        <p>Languages</p>
+      </div>
+      <div class="languages-content">
+        <ul>
+          <li *ngFor="#language of languages">
+            {{ language }}
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="repositories">
+      <div class="repositories-caption">
+        <p>Repositories</p>
+      </div>
+      <div class="repositories-content">
+        <div class="repository" *ngFor="#repository of repositories">
+          <p class="repository-name">
+            <a href="https://github.com/{{githubName}}/{{repository.name}}">{{repository.name}}</a>
+          </p>
+          <p class="repository-languages">
+            {{ repository.languages }}
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>

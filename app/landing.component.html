@@ -1,0 +1,9 @@
+<div class="container landing">
+  <div class="inner">
+    <h2>Enter your Github username</h2>
+    <div class="github-username-container form-group">
+        <input class="github-username form-control" #githubUsername type="text" id="githubUsername" />
+        <a class="generate-button btn btn-primary" type="button" (click)="goToProfile(githubUsername.value)">Generate</a>
+    </div>
+  </div>
+</div>

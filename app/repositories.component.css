@@ -1,0 +1,74 @@
+header {
+  text-align: left;
+  text-transform: uppercase;
+}
+header h1 {
+  font-size: 3rem;
+}
+.main {
+  margin-top: 1rem;
+}
+.main section.languages {
+  margin-top: 1.5rem;
+  text-align: left;
+}
+.main section.languages .languages-caption {
+  font-size: 2rem;
+  font-style: italic;
+}
+.main section.repositories {
+  text-align: left;
+  margin-top: 1.5rem;
+}
+.main section.repositories .repositories-caption {
+  font-size: 2rem;
+  font-style: italic;
+}
+.main section.repositories .repositories-caption p {
+  margin: 0;
+}
+.main section.repositories .repositories-content {
+  margin-top: 1rem;
+}
+.main section.repositories .repositories-content .repository {
+  margin-top: 0.5rem;
+}
+.main section.repositories .repositories-content p {
+  margin: 0;
+}
+@media (min-width: 480px) {
+  .main section.languages {
+    display: flex;
+  }
+  .main section.languages .languages-caption {
+    flex: 1;
+  }
+  .main section.languages .languages-content {
+    flex: 1;
+  }
+  .main section.repositories {
+    display: flex;
+  }
+  .main section.repositories .repositories-caption {
+    flex: 1;
+  }
+  .main section.repositories .repositories-content {
+    margin-top: 0;
+    flex: 1;
+  }
+  .main section.repositories .repositories-content .repository:first-child {
+    margin-top: 0;
+  }
+}
+@media (min-width: 992px) {
+  .main section.languages .languages-content {
+    flex: 3;
+  }
+  .main section.repositories .repositories-content {
+    flex: 3;
+  }
+  .main section.repositories .repositories-content .repository {
+    display: flex;
+    justify-content: space-between;
+  }
+}
